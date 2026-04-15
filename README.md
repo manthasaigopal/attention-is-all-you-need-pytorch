@@ -90,7 +90,7 @@ pip install torch
 
 ## Training
 
-A ready-to-use training script is included with a sequence copy task, Noam LR schedule, and greedy decode. See [`train.py`](train.py) for details.
+A ready-to-use training script is included with a sequence copy task, Noam LR schedule, and greedy decode. See [`main.py`](main.py) for details.
 
 ```bash
 python train.py
