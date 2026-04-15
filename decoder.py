@@ -27,6 +27,6 @@ transformer_decoder = TransformerDecoder(vocab_size=300, d_model=512, num_layers
 input_tokens = torch.tensor([[2, 3, 4,], [4, 5, 6]])
 seq_len = input_tokens.shape[1]
 tgt_mask = generate_target_mask(seq_len)
-output = transformer_decoder(input_tokens, tgt_mask)
+output = transformer_decoder(input_tokens, input_tokens, tgt_mask, tgt_mask)
 print(output)
 print(output.shape)
